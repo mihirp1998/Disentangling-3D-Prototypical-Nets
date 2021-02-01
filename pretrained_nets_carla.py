@@ -1,0 +1,659 @@
+feat_init = ""
+view_init = ""
+flow_init = ""
+emb2D_init = ""
+vis_init = ""
+occ_init = ""
+ego_init = ""
+tow_init = ""
+preocc_init = ""
+quant_init = ""
+pixor_init = ""
+munit_init = ""
+smoothnet_init = ""
+# emb_dim = 8
+# # occ_cheap = False
+# feat_dim = 32
+# feat_do_vae = False
+
+# view_depth = 32
+# view_pred_rgb = True
+# view_use_halftanh = True
+# view_pred_embs = False
+
+# occ_do_cheap = False
+# this is the previous winner net, from which i was able to train a great flownet in 500i
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_bgt_bgv_trainer_rgb_gt"
+view_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_bgt_bgv_trainer_rgb_gt"
+# occ_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_bgt_bgv_trainer_rgb_gt"
+
+
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_bgt_bgv_trainer_rgb_occ_gt"
+view_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_bgt_bgv_trainer_rgb_occ_gt"
+occ_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_bgt_bgv_trainer_rgb_occ_gt"
+
+
+
+# feat_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_E3_s.01_m1_e.1_n2_d16_bgt_bgv_trainer_rgb_occ_emb3d_gt"
+# view_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_E3_s.01_m1_e.1_n2_d16_act_acv_trainer_rgb_occ_emb3d_gt"
+# occ_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_E3_s.01_m1_e.1_n2_d16_act_acv_trainer_rgb_occ_emb3d_gt"
+
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_E3_s.01_m1_e.1_n2_d16_cgt_cgv_trainer_rgb_occ_emb3d_big"
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_bgt_bgv_trainer_rgb_gt"
+# view_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_bgt_bgv_trainer_rgb_gt"
+
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_cgt_cgv_trainer_rgb_big"
+view_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_cgt_cgv_trainer_rgb_big"
+
+
+# feat_init = "02_m144x144x144_1e-3_F32_cgt_trainer_emb_moc_o_big"
+# feat_init = "02_m144x144x144_1e-4_F32_di_Ft_trainer_big_builder_hard_exp5_pret_moc"
+
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_det_trainer_emb_moc_o_rgb_occ_emb2d_pret"
+view_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_det_trainer_emb_moc_o_rgb_occ_emb2d_pret"
+occ_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_det_trainer_emb_moc_o_rgb_occ_emb2d_pret"
+
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_ag_lt_ns_trainer_rgb_occ_multiple_clevr_orient2"
+occ_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_ag_lt_ns_trainer_rgb_occ_multiple_clevr_orient2"
+
+# feat_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_ag_lt_ns_trainer_rgb_occ_multiple_clevr_orient2"
+# #" quant_init = ""
+
+
+
+
+feat_init = "02_m144x144x144_1e-4_F32_be_lt_ns_trainer_big_builder_hard_exp5_pret_moc_orient"
+
+
+pixor_init = "02_m144x144x144_1e-3_F32f_cgt_ns_det_trainer_px_big_freeze_vq_rotate"
+det_init = "02_m144x144x144_1e-3_F32f_cgt_ns_det_trainer_big_freeze_vq_rotate"
+
+
+feat_init = "02_m144x144x144_1e-4_F32_be_lt_ns_trainer_big_builder_hard_exp5_pret_moc_orient"
+
+
+
+
+
+
+
+
+# quant_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_rgt_trainer_quantize_object_no_detach_rotate"
+
+quant_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_rgt_trainer_quantize_object_no_detach_rotate"
+feat_init = "02_m144x144x144_1e-3_F32f_cgt_ns_det_trainer_big_freeze_vq_rotate_deep_det"
+
+feat_init = "02_m144x144x144_1e-3_F32f_cgt_ns_det_trainer_big_freeze_vq_rotate"
+
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_rgt_trainer_quantize_object_no_detach"
+
+
+
+
+# single object detector
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_rgt_trainer_quantize_object_no_detach_rotate"
+quant_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_rgt_trainer_quantize_object_no_detach_rotate"
+det_init = "02_m144x144x144_1e-3_F32f_cgt_ns_det_trainer_big_freeze_vq_rotate_deep_det"
+
+
+
+
+
+
+
+
+
+# hardmined carla
+feat_init = "02_m144x144x144_1e-4_F32_bbt_ns_orient_lowres"
+
+
+
+
+
+
+
+
+# hard mined carla
+feat_init = "02_m144x144x144_1e-4_F32_bbt_ns_carla_trainer_big_builder_hard_exp5_pret_low_res"
+
+# hard mined clevr
+feat_init = '02_m144x144x144_1e-4_F32_be_lt_ns_clevr_multiple_trainer_hard_exp5_pret_orient'
+
+
+# carla only occ
+feat_init = "02_m144x144x144_1e-3_F32_Oc_c1_s1_bbt_ns_carla_trainer_occ"
+
+# clevr only occ
+feat_init = '02_m144x144x144_1e-3_F32_Oc_c1_s1_be_lt_ns_trainer_occ_multiple'
+
+
+
+
+
+
+
+
+
+
+
+# vqvae best model for carla 100 means
+feat_init = '02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_bbt_ns_carla_trainer_quantize_object_no_detach_rotate_100_gt'
+view_init = '02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_bbt_ns_carla_trainer_quantize_object_no_detach_rotate_100_gt'
+
+#clevr single object vqvae 41 means
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_rgt_trainer_quantize_object_no_detach_rotate"
+view_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_rgt_trainer_quantize_object_no_detach_rotate"
+quant_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_rgt_trainer_quantize_object_no_detach_rotate"
+
+
+
+#clevr single object vqvae 100 means
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_rgt_ns_clevr_trainer_quantize_object_no_detach_rotate_100"
+view_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_rgt_ns_clevr_trainer_quantize_object_no_detach_rotate_100"
+quant_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_rgt_ns_clevr_trainer_quantize_object_no_detach_rotate_100"
+
+# clevr big dataset rgb occ
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_cgt_cgv_trainer_rgb_occ_big"
+view_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_cgt_cgv_trainer_rgb_occ_big"
+occ_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_cgt_cgv_trainer_rgb_occ_big"
+
+
+
+
+# carla muco
+feat_init = '02_m144x144x144_1e-3_F32_bbt_ns_carla_trainer_rgb_occ_orient_low_res_viewContrast_moc'
+
+
+
+
+
+# rgb occ carla muco detector
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_bbt_ns_carla_trainer_rgb_occ_orient_low_res"
+det_init = "02_m144x144x144_1e-3_F32f_fct_ns_carla_det_trainer_big_freeze_vq_rotate_deep_det_pret_rgb_occ"
+
+# clevr multiple object detector
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_be_lt_ns_trainer_quantize_object_no_detach_rotate_multiple_fixed"
+view_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_be_lt_ns_trainer_quantize_object_no_detach_rotate_multiple_fixed"
+quant_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_be_lt_ns_trainer_quantize_object_no_detach_rotate_multiple_fixed"
+det_init = "02_m144x144x144_1e-3_F32f_ag_lt_ns_det_trainer_big_freeze_vq_rotate_deep_det_multiple"
+
+
+
+
+
+
+# clevr multiple vq rgb 100 means
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_be_lt_ns_trainer_quantize_object_no_detach_rotate_multiple_fixed"
+view_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_be_lt_ns_trainer_quantize_object_no_detach_rotate_multiple_fixed"
+quant_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_be_lt_ns_trainer_quantize_object_no_detach_rotate_multiple_fixed"
+
+
+#bigbird rgb view pred
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_ggt_ns_bigbird_trainer_rgb_orient"
+view_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_ggt_ns_bigbird_trainer_rgb_orient"
+
+# bigbird viewpred occ
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_eet_ns_bigbird_trainer_rgb_occ_multiple_orient"
+view_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_eet_ns_bigbird_trainer_rgb_occ_multiple_orient"
+occ_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_eet_ns_bigbird_trainer_rgb_occ_multiple_orient"
+
+
+
+# carla vq rgb 100
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_bbt_ns_carla_trainer_quantize_object_no_detach_rotate_100_gt"
+view_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_bbt_ns_carla_trainer_quantize_object_no_detach_rotate_100_gt"
+occ_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_bbt_ns_carla_trainer_quantize_object_no_detach_rotate"
+quant_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_bbt_ns_carla_trainer_quantize_object_no_detach_rotate_100_gt"
+det_init = "02_m144x144x144_1e-3_F32f_bb_tv_at_ns_carla_det_trainer_big_freeze_vq_rotate_deep_det_2"
+
+
+
+
+# hard mined carla muco detector 2d detector
+feat_init = "02_m144x144x144_1e-4_F32_bbt_ns_orient_lowres"
+det_init = "02_m144x144x144_1e-3_F32f_bb_tv_at_ns_carla_det_trainer_big_freeze_vq_rotate_deep_det_from2d"
+quant_init = '02_m144x144x144_1e-4_F32f_bbt_ns_carla_trainer_quantize_object_no_detach_rotate_100_init_examples_hard_only_embed_frozen'
+
+
+
+
+
+
+
+
+
+
+# bigbird muco hpm
+feat_init = '02_m144x144x144_1e-4_F32_ggt_ns_bigbird_trainer_big_builder_hard_exp5_pret_moc_orient_low_res2'
+
+
+
+# hard mined carla muco detector
+feat_init = "02_m144x144x144_1e-4_F32_bbt_ns_orient_lowres"
+det_init = "02_m144x144x144_1e-3_F32f_bb_tv_at_ns_carla_det_trainer_big_freeze_vq_rotate_deep_det_1_old"
+quant_init = '02_m144x144x144_1e-4_F32f_bbt_ns_carla_trainer_quantize_object_no_detach_rotate_100_init_examples_hard_only_embed_frozen'
+
+
+
+# bigbird muco viweContrast
+feat_init = "02_m144x144x144_1e-3_F32_E3_s.01_m1_e.1_n2_d16_be_lt_ns_clevr_trainer_rgb_occ_multiple_clevr_orient_viewContrast_t"
+
+# bigbird viewpred occ
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_eet_ns_bigbird_trainer_rgb_occ_multiple_orient"
+
+# clevr only rgb
+feat_init = '02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_be_lt_ns_trainer_rgb_multiple'
+
+# carla only rgb
+feat_init = '02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_bbt_ns_carla_trainer_rgb_orient'
+
+# carla view contrast
+feat_init ='02_m144x144x144_1e-3_F32_E3_s.01_m1_e.1_n2_d16_be_lt_ns_clevr_trainer_rgb_occ_multiple_clevr_orient_viewContrast_t'
+
+# clevr view contrast
+feat_init = '02_m144x144x144_1e-3_F32_be_lt_ns_clevr_trainer_rgb_occ_multiple_clevr_orient_viewContrast_moc'
+
+
+# hard mined carla muco
+feat_init = "02_m144x144x144_1e-4_F32_bbt_ns_orient_lowres"
+
+# bigbird muco hpm
+feat_init = "02_m144x144x144_1e-4_F32_ggt_ns_bigbird_trainer_big_builder_hard_exp5_pret_moc_orient_low_res2"
+
+
+
+# carla viewpred occ
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_bbt_ns_carla_trainer_rgb_occ_orient_low_res"
+view_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_bbt_ns_carla_trainer_rgb_occ_orient_low_res"
+occ_init =  "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_bbt_ns_carla_trainer_rgb_occ_orient_low_res"
+
+
+# carla vqvae viewpred
+feat_init = '02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_bbt_ns_carla_trainer_quantize_object_no_detach_rotate_100_gt'
+view_init = '02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_bbt_ns_carla_trainer_quantize_object_no_detach_rotate_100_gt'
+quant_init = '02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_bbt_ns_carla_trainer_quantize_object_no_detach_rotate_100_gt'
+
+# clevr best embeddings for scene parsing
+feat_init = "02_m144x144x144_1e-4_F32f_be_lt_ns_clevr_trainer_quantize_object_no_detach_rotate_50_init_examples_hard_only_embed_frozen"
+quant_init = "02_m144x144x144_1e-4_F32f_be_lt_ns_clevr_trainer_quantize_object_no_detach_rotate_50_init_examples_hard_only_embed_frozen"
+
+# carla best embeddings for scene parsing
+feat_init = "02_m144x144x144_1e-4_F32f_bbt_ns_carla_trainer_quantize_object_no_detach_rotate_40_init_examples_hard_only_embed_frozen"
+quant_init = "02_m144x144x144_1e-4_F32f_bbt_ns_carla_trainer_quantize_object_no_detach_rotate_40_init_examples_hard_only_embed_frozen"
+
+
+
+# replica rgb occ
+feat_init = '02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_aat_ns_replica_multiview_trainer'
+occ_init = '02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_aat_ns_replica_multiview_trainer'
+view_init = '02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_aat_ns_replica_multiview_trainer'
+
+# clevr multiple object detector improved version from 2d
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_be_lt_ns_trainer_quantize_object_no_detach_rotate_multiple_fixed"
+quant_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_be_lt_ns_trainer_quantize_object_no_detach_rotate_multiple_fixed"
+det_init = '02_m144x144x144_1e-3_F32f_ag_lt_ns_det_trainer_big_freeze_vq_rotate_deep_det_multiple_from2d_fixed'
+
+
+
+
+# clevr vqvae viewpred
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_be_lt_ns_trainer_quantize_object_no_detach_rotate_multiple_fixed"
+view_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_be_lt_ns_trainer_quantize_object_no_detach_rotate_multiple_fixed"
+quant_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_be_lt_ns_trainer_quantize_object_no_detach_rotate_multiple_fixed"
+
+
+
+# replica best for parsing
+feat_init = '02_m144x144x144_1e-4_F32f_cct_ns_replica_trainer_quantize_object_no_detach_rotate_50_init_examples_hard_only_embed_frozen'
+quant_init = '02_m144x144x144_1e-4_F32f_cct_ns_replica_trainer_quantize_object_no_detach_rotate_50_init_examples_hard_only_embed_frozen'
+
+# replica hard mine
+feat_init = '02_m144x144x144_1e-4_F32_cct_ns_replica_trainer_hard_exp5_pret_moc_orient'
+det_init =  '02_m144x144x144_1e-3_F32f_cct_ns_replica_det_trainer_freeze_vq_rotate_deep_det'
+
+# replica vqvae viewpred
+feat_init =  '02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_cct_ns_replica_trainer_quantize_object_no_detach_rotate'
+quant_init =  '02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_cct_ns_replica_trainer_quantize_object_no_detach_rotate'
+view_init =  '02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_cct_ns_replica_trainer_quantize_object_no_detach_rotate'
+
+# clevr multiple object detector improved version
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_be_lt_ns_trainer_quantize_object_no_detach_rotate_multiple_fixed"
+quant_init = "02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_be_lt_ns_trainer_quantize_object_no_detach_rotate_multiple_fixed"
+det_init = '02_m144x144x144_1e-3_F32f_ag_lt_ns_det_trainer_big_freeze_vq_rotate_deep_det_multiple_normal'
+
+
+# clevr hardmine moc 2d boxes continual
+feat_init = "02_m144x144x144_1e-4_F32_be_lt_ns_clevr_multiple_trainer_hard_exp5_pret_moc_orient_detboxes"
+quant_init = '02_m144x144x144_1e-4_F32f_be_lt_ns_clevr_trainer_quantize_object_no_detach_rotate_50_init_examples_hard_only_embed_2dboxes_frozen_continual'
+#iteration 1
+feat_init = '02_m144x144x144_1e-4_F32_be_lt_ns_clevr_multiple_trainer_hard_exp5_pret_moc_orient_2dboxes'
+quant_init = '02_m144x144x144_1e-4_F32f_be_lt_ns_clevr_trainer_quantize_object_no_detach_rotate_50_init_examples_hard_only_embed_2dboxes_frozen_continual_fixed'
+det_init = '02_m144x144x144_1e-4_F32f_be_lt_ns_clevr_trainer_freeze_vq_rotate_selfimproveIterate_deep_multiple_maskout_hardneg_continual_3'
+#iteration 2
+quant_init = '02_m144x144x144_1e-4_F32f_be_lt_ns_clevr_trainer_quantize_object_no_detach_rotate_50_init_examples_hard_only_embed_detboxes_frozen_continual'
+
+# carla vqvae viewpred new
+feat_init = '02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_bbt_ns_carla_trainer_quantize_object_no_detach_rotate_1'
+view_init = '02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_bbt_ns_carla_trainer_quantize_object_no_detach_rotate_1'
+quant_init = '02_m144x144x144_p128x128_1e-3_F32_V_d32_c1_bbt_ns_carla_trainer_quantize_object_no_detach_rotate_1'
+
+# hard mined clevr muco
+feat_init = "02_m144x144x144_1e-4_F32_be_lt_ns_clevr_multiple_trainer_hard_exp5_pret_moc_orient"
+
+# clevr multiple viewpred occ
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_ag_lt_ns_trainer_rgb_occ_multiple_clevr_orient2"
+occ_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_ag_lt_ns_trainer_rgb_occ_multiple_clevr_orient2"
+view_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_ag_lt_ns_trainer_rgb_occ_multiple_clevr_orient2"
+
+
+
+
+# hard mined clevr muco 2 vqa
+feat_init = "02_m144x144x144_1e-4_F32_bot_ns_clevr_multiple_trainer_hard_exp5_pret_moc_orient2"
+
+#  occ clevr  vqa
+feat_init = '02_m144x144x144_1e-3_F32_Oc_c1_s1_bot_ns_trainer_occ_no_bn1'
+
+# rgb occ clevr  vqa + muco hardmine
+feat_init = "02_m144x144x144_1e-4_F32_bot_ns_clevr_multiple_trainer_hard_exp5_pret_moc_orient2_pret_rgb_occ"
+
+
+# best for 3
+feat_init = '02_m128x128x192_1e-4_F32f_bot_ns_clevr_trainer_quantize_object_no_detach_rotate_3_init_examples_hard_only_embed_frozen_1'
+quant_init = '02_m128x128x192_1e-4_F32f_bot_ns_clevr_trainer_quantize_object_no_detach_rotate_3_init_examples_hard_only_embed_frozen_1'
+
+
+# best for 10
+feat_init = '02_m128x128x192_1e-4_F32f_bot_ns_clevr_trainer_quantize_object_no_detach_rotate_10_init_examples_hard_only_embed_frozen'
+quant_init = '02_m128x128x192_1e-4_F32f_bot_ns_clevr_trainer_quantize_object_no_detach_rotate_10_init_examples_hard_only_embed_frozen'
+
+#probably best for shapes
+feat_init = "02_m144x144x144_1e-3_F32_Oc_c1_s1_aat_ns_trainer_occ_no_bn"
+occ_init = "02_m144x144x144_1e-3_F32_Oc_c1_s1_aat_ns_trainer_occ_no_bn"
+
+# rgb occ clevr  vqa
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_bot_ns_trainer_rgb_occ_no_bn"
+occ_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_bot_ns_trainer_rgb_occ_no_bn"
+view_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_bot_ns_trainer_rgb_occ_no_bn"
+
+
+
+
+#hpm part level
+feat_init = '02_m144x144x144_1e-4_F32_rotMA500_0.25_0.75t_ns_clevr_multiple_trainer_hard_exp5_pret_moc_orient2_gt_occ_0.25_0.75'
+
+# occ vqa23
+feat_init = "02_m144x144x144_1e-3_F32_Oc_c1_s1_rotMA500_full_ns_trainer_occ_no_bn"
+# mean 0.9756983 median 0.975471 min 0.96650517
+# 
+
+
+
+
+# rgb_occ
+feat_init = "02_m144x144x144_p160x240_1e-3_F32_Oc_c1_s1_V_d32_c1_rotMA500_full_ns_trainer_rgb_occ_no_bn"
+occ_init = "02_m144x144x144_p160x240_1e-3_F32_Oc_c1_s1_V_d32_c1_rotMA500_full_ns_trainer_rgb_occ_no_bn"
+view_init = "02_m144x144x144_p160x240_1e-3_F32_Oc_c1_s1_V_d32_c1_rotMA500_full_ns_trainer_rgb_occ_no_bn"
+
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_ae_spheret_ns_trainer_rgb_occ_no_bn"
+occ_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_ae_spheret_ns_trainer_rgb_occ_no_bn"
+view_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_ae_spheret_ns_trainer_rgb_occ_no_bn"
+
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_aet_ns_trainer_rgb_occ_no_bn"
+occ_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_aet_ns_trainer_rgb_occ_no_bn"
+view_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_aet_ns_trainer_rgb_occ_no_bn"
+
+
+
+
+# feat_init = '02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_aet_ns_trainer_rgb_occ_no_bn_replaceRD'
+
+# feat_init = '02_m144x144x144_1e-3_F32_Oc_c1_s1_aet_ns_trainer_occ_no_bn_onlyocc'
+
+
+
+# feat_init = '01_m144x144x144_p128x128_1e-3_F32_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_style_transfer'
+
+feat_init = '01_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_occ_no_bn_style_transfer'
+
+occ_init = '01_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_occ_no_bn_style_transfer'
+view_init = '01_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_occ_no_bn_style_transfer'
+
+munit_init = ''
+
+
+feat_init = '02_m144x144x144_p128x128_1e-4_M_F32_V_d32_c1_ae_spheret_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4'
+view_init = '02_m144x144x144_p128x128_1e-4_M_F32_V_d32_c1_ae_spheret_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4'
+munit_init = '02_m144x144x144_p128x128_1e-4_M_F32_V_d32_c1_ae_spheret_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4'
+
+
+
+feat_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_0.5'
+occ_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_0.5'
+view_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_0.5'
+munit_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_0.5'
+
+
+
+# feat_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_1'
+# occ_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_1'
+# view_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_1'
+# munit_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_1'
+
+
+
+# feat_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_1_no'
+# occ_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_1_no'
+# view_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_1_no'
+# munit_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_1_no'
+
+
+
+# feat_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_classic_simple'
+# occ_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_classic_simple'
+# view_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_classic_simple'
+# munit_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_classic_simple'
+
+
+
+
+# feat_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_no_cycle'
+# occ_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_no_cycle'
+# view_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_no_cycle'
+# munit_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_no_cycle'
+
+
+# feat_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4'
+# occ_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4'
+# view_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4'
+# munit_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4'
+
+
+
+
+
+
+
+
+
+
+
+feat_init = '02_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_aet_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_classic_simple_cross_pret_0.1'
+
+
+feat_init = '02_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_aet_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_classic_simple_cross_pret_0.1'
+occ_init = '02_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_aet_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_classic_simple_cross_pret_0.1'
+view_init = '02_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_aet_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_classic_simple_cross_pret_0.1'
+munit_init = '02_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_aet_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_classic_simple_cross_pret_0.1'
+
+
+
+
+
+# RGB OCC for munit
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_aet_ns_trainer_rgb_occ_no_bn"
+occ_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_aet_ns_trainer_rgb_occ_no_bn"
+view_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_aet_ns_trainer_rgb_occ_no_bn"
+
+
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_aet_ns_trainer_rgb_occ_no_bn"
+occ_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_aet_ns_trainer_rgb_occ_no_bn"
+view_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_aet_ns_trainer_rgb_occ_no_bn"
+# feat_init = "02_m144x144x144_1e-4_F32f_rotMA500_0.025_0.975t_ns_clevr_trainer_quantize_object_no_detach_rotate_5_supervised_2.5_97.5"
+
+feat_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_0.1'
+occ_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_0.1'
+view_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_0.1'
+munit_init = '01_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_contentt_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_0.1'
+# quant_init = "02_m144x144x144_1e-4_F32f_rotMA500_0.025_0.975t_ns_clevr_trainer_quantize_object_no_detach_rotate_5_supervised_2.5_97.5"
+#smoothnet_init = ""
+
+
+# feat_init = "02_m144x144x144_1e-4_F32f_rotMA500_0.1_0.9t_ns_clevr_trainer_quantize_object_no_detach_rotate_5_supervised_10_90"
+# quant_init = "02_m144x144x144_1e-4_F32f_rotMA500_0.1_0.9t_ns_clevr_trainer_quantize_object_no_detach_rotate_5_supervised_10_90"
+
+# #hpm part level
+# feat_init = '02_m144x144x144_1e-4_F32_rotMA500_0.25_0.75t_ns_clevr_multiple_trainer_hard_exp5_pret_moc_orient2_gt_occ_0.25_0.75'
+# feat_init = '02_m144x144x144_1e-4_F32f_rotMA500_halft_ns_clevr_trainer_quantize_object_no_detach_rotate_5_supervised'
+# quant_init = '02_m144x144x144_1e-4_F32f_rotMA500_halft_ns_clevr_trainer_quantize_object_no_detach_rotate_5_supervised'
+
+# feat_init = "02_m144x144x144_1e-4_F32_rotMA500_halft_ns_clevr_trainer_quantize_object_no_detach_rotate_5_supervised_nonfrozen"
+# quant_init = "02_m144x144x144_1e-4_F32_rotMA500_halft_ns_clevr_trainer_quantize_object_no_detach_rotate_5_supervised_nonfrozen"
+
+# feat_init = "02_m144x144x144_1e-4_F32_rotMA500_0.025_0.975t_ns_clevr_trainer_quantize_object_no_detach_rotate_5_supervised_nonfrozen_2.5_97.5"
+# quant_init = "02_m144x144x144_1e-4_F32_rotMA500_0.025_0.975t_ns_clevr_trainer_quantize_object_no_detach_rotate_5_supervised_nonfrozen_2.5_97.5"
+
+# feat_init = "02_m144x144x144_1e-4_F32f_rotMA500_0.025_0.975t_ns_clevr_trainer_quantize_object_no_detach_rotate_5_supervised_2.5_97.5"
+# quant_init = "02_m144x144x144_1e-4_F32f_rotMA500_0.025_0.975t_ns_clevr_trainer_quantize_object_no_detach_rotate_5_supervised_2.5_97.5"
+
+# feat_init = "02_m144x144x144_1e-4_F32f_rotMA500_0.25_0.75v_ns_clevr_trainer_quantize_object_no_detach_rotate_frozen_15"
+# quant_init = "02_m144x144x144_1e-4_F32f_rotMA500_0.25_0.75v_ns_clevr_trainer_quantize_object_no_detach_rotate_frozen_15"
+# <<<<<<< HEAD
+# feat_init = '02_m144x144x144_1e-3_F32f_ae_day_single_All_1t_ae_day_multit_ns_trainer_freeze_deep_det'
+# det_init = '02_m144x144x144_1e-3_F32f_ae_day_single_All_1t_ae_day_multit_ns_trainer_freeze_deep_det'
+
+# det_init = '02_m144x144x144_1e-3_F32f_ae_day_single_SC_1t_ae_day_multit_ns_trainer_freeze_deep_det_aug_dis_16'
+
+feat_init = '02_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_day_singlet_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_classic_simple_cross_0.1'
+occ_init = '02_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_day_singlet_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_classic_simple_cross_0.1'
+view_init = '02_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_day_singlet_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_classic_simple_cross_0.1'
+munit_init = '02_m144x144x144_p128x128_1e-4_M_F32_Oc_c1_s1_V_d32_c1_ae_day_singlet_ns_trainer_rgb_no_bn_munit_sphere_no_feat_recons_bs_simple_lr4_classic_simple_cross_0.1'
+
+
+
+
+
+
+
+# '02_m144x144x144_p160x240_1e-4_M_F32f_Ocf_c1_s1_Vf_d32_c1_single_obj_large_480_gt_ns_munit_single_lhighes_lr4_frozen_largeobj'
+# smoothnet_init = '02_m144x144x144_p160x240_1e-4_M_F32f_Ocf_c1_s1_Vf_d32_c1_single_obj_large_480_gt_ns_munit_single_lhighes_lr4_frozen_largeobj'
+
+
+
+
+feat_init = '02_m144x144x144_p160x240_1e-4_M_F32_Oc_c1_s1_V_d32_c1_single_obj_large_480_gt_ns_trainer_rgb_no_bn_munit__simple_cross_0.1_dsn'
+occ_init = '02_m144x144x144_p160x240_1e-4_M_F32_Oc_c1_s1_V_d32_c1_single_obj_large_480_gt_ns_trainer_rgb_no_bn_munit__simple_cross_0.1_dsn'
+view_init = '02_m144x144x144_p160x240_1e-4_M_F32_Oc_c1_s1_V_d32_c1_single_obj_large_480_gt_ns_trainer_rgb_no_bn_munit__simple_cross_0.1_dsn'
+munit_init = '02_m144x144x144_p160x240_1e-4_M_F32_Oc_c1_s1_V_d32_c1_single_obj_large_480_gt_ns_trainer_rgb_no_bn_munit__simple_cross_0.1_dsn'
+smoothnet_init = '02_m144x144x144_p160x240_1e-4_M_F32_Oc_c1_s1_V_d32_c1_single_obj_large_480_gt_ns_trainer_rgb_no_bn_munit__simple_cross_0.1_dsn'
+
+# =======
+
+
+# # rgb-occ checkpoint for Single Large Dataset - cit.txt
+
+feat_init = '02_m144x144x144_p160x240_1e-4_F32_Oc_c1_s1_V_d32_c1_multi_obj_480_at_ns_VqaLR4Multi480'
+# feat_init = '02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_cit_ns_ClevrRgbOccLR3'
+# occ_init = '02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_cit_ns_ClevrRgbOccLR3'
+# occ_init = '02_m144x144x144_p160x240_1e-4_F32_Oc_c1_s1_V_d32_c1_multi_obj_480_at_ns_VqaLR4Multi480'
+# view_init = '02_m144x144x144_p160x240_1e-4_F32_Oc_c1_s1_V_d32_c1_multi_obj_480_at_ns_VqaLR4Multi480'
+# view_init = '02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_cit_ns_ClevrRgbOccLR3'
+
+feat_init = '02_m144x144x144_1e-3_F32_multi_obj_480_at_multi_obj_480_av_ns_trainer_detector_full'
+det_init = '02_m144x144x144_1e-3_F32_multi_obj_480_at_multi_obj_480_av_ns_trainer_detector_full'
+
+
+
+feat_init = '3d_detector'
+det_init = '3d_detector'
+# # rgb-occ for darshan's vqa dataset with low res 256 x 256 dim images with multiple objects
+# feat_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_multi_obj_256_et_ns_VqaLR3Multi256"
+# occ_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_multi_obj_256_et_ns_VqaLR3Multi256"
+# view_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_multi_obj_256_et_ns_VqaLR3Multi256"
+
+# # rgb-occ for darshan's vqa dataset with high res 320 x 480 dim images with multiple objects
+# feat_init = "02_m144x144x144_p160x240_1e-3_F32_Oc_c1_s1_V_d32_c1_multi_obj_480_at_ns_VqaLR3Multi480"
+# occ_init = "02_m144x144x144_p160x240_1e-3_F32_Oc_c1_s1_V_d32_c1_multi_obj_480_at_ns_VqaLR3Multi480"
+# view_init = "02_m144x144x144_p160x240_1e-3_F32_Oc_c1_s1_V_d32_c1_multi_obj_480_at_ns_VqaLR3Multi480"
+
+# # munit for darshan's vqa dataset with high res 320 x 480 dim images with single objects. Featnet trained on high res multi object dataset
+# feat_init = "02_m144x144x144_p160x240_1e-4_M_F32f_Ocf_c1_s1_Vf_d32_c1_single_obj_large_480_gt_ns_munit_single_lhighes_lr4_frozen_largeobj"
+# occ_init = "02_m144x144x144_p160x240_1e-4_M_F32f_Ocf_c1_s1_Vf_d32_c1_single_obj_large_480_gt_ns_munit_single_lhighes_lr4_frozen_largeobj"
+# view_init = "02_m144x144x144_p160x240_1e-4_M_F32f_Ocf_c1_s1_Vf_d32_c1_single_obj_large_480_gt_ns_munit_single_lhighes_lr4_frozen_largeobj"
+# munit_init = "02_m144x144x144_p160x240_1e-4_M_F32f_Ocf_c1_s1_Vf_d32_c1_single_obj_large_480_gt_ns_munit_single_lhighes_lr4_frozen_largeobj"
+# >>>>>>> e575177039ddd892cd65f8d88a9754d02575d3c9
+
+
+
+feat_init = '02_m144x144x144_1e-3_F32_multi_obj_480_at_multi_obj_480_av_ns_trainer_detector_full_1'
+det_init = '02_m144x144x144_1e-3_F32_multi_obj_480_at_multi_obj_480_av_ns_trainer_detector_full_1'
+
+feat_init = '02_m144x144x144_p160x240_1e-4_M_F32f_Ocf_c1_s1_Vf_d32_c1_single_obj_large_480_gt_ns_munit_single_lhighes_lr4_frozen_largeobj'
+occ_init = '02_m144x144x144_p160x240_1e-4_M_F32f_Ocf_c1_s1_Vf_d32_c1_single_obj_large_480_gt_ns_munit_single_lhighes_lr4_frozen_largeobj'
+view_init = '02_m144x144x144_p160x240_1e-4_M_F32f_Ocf_c1_s1_Vf_d32_c1_single_obj_large_480_gt_ns_munit_single_lhighes_lr4_frozen_largeobj'
+munit_init = '02_m144x144x144_p160x240_1e-4_M_F32f_Ocf_c1_s1_Vf_d32_c1_single_obj_large_480_gt_ns_munit_single_lhighes_lr4_frozen_largeobj'
+
+# carla viewpred occ low res
+
+feat_init = '02_m144x144x144_p120x160_1e-3_F32_Oc_c1_s1_V_d32_c1_aat_aav_trainer_rgb_occ_big_no_bn_real'
+view_init = '02_m144x144x144_p120x160_1e-3_F32_Oc_c1_s1_V_d32_c1_aat_aav_trainer_rgb_occ_big_no_bn_real'
+occ_init = "02_m144x144x144_p120x160_1e-3_F32_Oc_c1_s1_V_d32_c1_aat_aav_trainer_rgb_occ_big_no_bn_real"
+
+
+
+
+feat_init = '02_m144x144x144_p120x160_1e-4_M_F32_Oc_c1_s1_V_d32_c1_abt_ns_trainer_rgb_no_bn_munit_simple_cross_0.1_real_cycle'
+occ_init = '02_m144x144x144_p120x160_1e-4_M_F32_Oc_c1_s1_V_d32_c1_abt_ns_trainer_rgb_no_bn_munit_simple_cross_0.1_real_cycle'
+view_init = '02_m144x144x144_p120x160_1e-4_M_F32_Oc_c1_s1_V_d32_c1_abt_ns_trainer_rgb_no_bn_munit_simple_cross_0.1_real_cycle'
+munit_init = '02_m144x144x144_p120x160_1e-4_M_F32_Oc_c1_s1_V_d32_c1_abt_ns_trainer_rgb_no_bn_munit_simple_cross_0.1_real_cycle'
+smoothnet_init = '02_m144x144x144_p120x160_1e-4_M_F32_Oc_c1_s1_V_d32_c1_abt_ns_trainer_rgb_no_bn_munit_simple_cross_0.1_real_cycle'
+
+
+
+feat_init = '02_m144x144x144_p120x160_1e-4_M_F32_Oc_c1_s1_V_d32_c1_abt_ns_trainer_rgb_no_bn_munit_simple_cross_0.1_real_cycle'
+view_init = '02_m144x144x144_p120x160_1e-4_M_F32_Oc_c1_s1_V_d32_c1_abt_ns_trainer_rgb_no_bn_munit_simple_cross_0.1_real_cycle'
+occ_init = '02_m144x144x144_p120x160_1e-4_M_F32_Oc_c1_s1_V_d32_c1_abt_ns_trainer_rgb_no_bn_munit_simple_cross_0.1_real_cycle'
+munit_init = '02_m144x144x144_p120x160_1e-4_M_F32_Oc_c1_s1_V_d32_c1_abt_ns_trainer_rgb_no_bn_munit_simple_cross_0.1_real_cycle'
+
+feat_init = '02_m144x144x144_p120x160_1e-4_M_F32_Oc_c1_s1_V_d32_c1_abt_ns_trainer_rgb_no_bn_munit_simple_cross_0.1_real'
+view_init = '02_m144x144x144_p120x160_1e-4_M_F32_Oc_c1_s1_V_d32_c1_abt_ns_trainer_rgb_no_bn_munit_simple_cross_0.1_real'
+occ_init = '02_m144x144x144_p120x160_1e-4_M_F32_Oc_c1_s1_V_d32_c1_abt_ns_trainer_rgb_no_bn_munit_simple_cross_0.1_real'
+munit_init = '02_m144x144x144_p120x160_1e-4_M_F32_Oc_c1_s1_V_d32_c1_abt_ns_trainer_rgb_no_bn_munit_simple_cross_0.1_real'
+
+
+
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_allVehiclet_ns_carla_trainer_rgb_occ_no_bn"
+view_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_allVehiclet_ns_carla_trainer_rgb_occ_no_bn"
+occ_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_allVehiclet_ns_carla_trainer_rgb_occ_no_bn"
+
+feat_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_bbt_ns_carla_trainer_rgb_occ_orient_low_res"
+view_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_bbt_ns_carla_trainer_rgb_occ_orient_low_res"
+occ_init = "02_m144x144x144_p128x128_1e-3_F32_Oc_c1_s1_V_d32_c1_bbt_ns_carla_trainer_rgb_occ_orient_low_res"
+
+feat_init = '02_m144x144x144_p160x240_1e-4_M_F32f_Oc_c1_s1_V_d32_c1_single_obj_large_480_gt_ns_trainer_rgb_no_bn_munit_simple_cross_0.1_dsn_frozen'
+occ_init = '02_m144x144x144_p160x240_1e-4_M_F32f_Oc_c1_s1_V_d32_c1_single_obj_large_480_gt_ns_trainer_rgb_no_bn_munit_simple_cross_0.1_dsn_frozen'
+view_init = '02_m144x144x144_p160x240_1e-4_M_F32f_Oc_c1_s1_V_d32_c1_single_obj_large_480_gt_ns_trainer_rgb_no_bn_munit_simple_cross_0.1_dsn_frozen'
+munit_init = '02_m144x144x144_p160x240_1e-4_M_F32f_Oc_c1_s1_V_d32_c1_single_obj_large_480_gt_ns_trainer_rgb_no_bn_munit_simple_cross_0.1_dsn_frozen'
+smoothnet_init = '02_m144x144x144_p160x240_1e-4_M_F32f_Oc_c1_s1_V_d32_c1_single_obj_large_480_gt_ns_trainer_rgb_no_bn_munit_simple_cross_0.1_dsn_frozen'
+
+
+feat_init = '02_m144x144x144_p160x240_1e-4_M_F32_Oc_c1_s1_V_d32_c1_single_obj_large_480_gt_ns_munit_single_highres_lr4_largeobj'
+occ_init = '02_m144x144x144_p160x240_1e-4_M_F32_Oc_c1_s1_V_d32_c1_single_obj_large_480_gt_ns_munit_single_highres_lr4_largeobj'
+view_init = '02_m144x144x144_p160x240_1e-4_M_F32_Oc_c1_s1_V_d32_c1_single_obj_large_480_gt_ns_munit_single_highres_lr4_largeobj'
+munit_init = '02_m144x144x144_p160x240_1e-4_M_F32_Oc_c1_s1_V_d32_c1_single_obj_large_480_gt_ns_munit_single_highres_lr4_largeobj'
+
+feat_init = '02_m144x144x144_p160x240_1e-4_M_F32f_Oc_c1_s1_V_d32_c1_single_obj_large_480_gt_ns_trainer_rgb_no_bn_munit_simple_cross_0.1_dsn_frozen'
+occ_init = '02_m144x144x144_p160x240_1e-4_M_F32f_Oc_c1_s1_V_d32_c1_single_obj_large_480_gt_ns_trainer_rgb_no_bn_munit_simple_cross_0.1_dsn_frozen'
+view_init = '02_m144x144x144_p160x240_1e-4_M_F32f_Oc_c1_s1_V_d32_c1_single_obj_large_480_gt_ns_trainer_rgb_no_bn_munit_simple_cross_0.1_dsn_frozen'
+munit_init = '02_m144x144x144_p160x240_1e-4_M_F32f_Oc_c1_s1_V_d32_c1_single_obj_large_480_gt_ns_trainer_rgb_no_bn_munit_simple_cross_0.1_dsn_frozen'
+smoothnet_init = '02_m144x144x144_p160x240_1e-4_M_F32f_Oc_c1_s1_V_d32_c1_single_obj_large_480_gt_ns_trainer_rgb_no_bn_munit_simple_cross_0.1_dsn_frozen'
