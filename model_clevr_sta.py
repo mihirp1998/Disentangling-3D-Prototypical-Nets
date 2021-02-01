@@ -588,7 +588,7 @@ class ClevrStaNet(nn.Module):
             assert(sx==0.5) # else we need a fancier downsampler
             assert(sy==0.5)
             projpix_T_cams = __u(utils_geom.scale_intrinsics(__p(pix_T_cams), sx, sy))
-            st()
+            # st()
 
             if hyp.do_munit:
                 feat_projX00 = utils_vox.apply_pixX_T_memR_to_voxR(
