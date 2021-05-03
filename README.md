@@ -25,5 +25,5 @@ Coming soon
 
 ### Correspondence
 
-If you want me to prioritize release of something, then mail me at mihirp1998.mp@gmail.com 
+If you want me to prioritize release of something specific, then mail me at mihirp1998.mp@gmail.com 
 
