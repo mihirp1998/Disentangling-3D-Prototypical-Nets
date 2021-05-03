@@ -16,12 +16,12 @@ python main.py cs --en trainer_rgb_no_bn_munit_simple_cross_0.1_dsn
 
 ### Testing Few-shot retrieval
 
-Coming soon
+*Coming soon*
 
 
 ### Testing VQA
 
-Coming soon
+*Coming soon*
 
 
 #### Correspondence
