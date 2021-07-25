@@ -16,7 +16,7 @@ conda env create -f environment.yml
 
 Download part of the dataset from this link https://drive.google.com/file/d/1OXGvOgweSXjJMykRNlglvds-sDfwt0Sa/view?usp=sharing
 
-Update the root location from here: 
+Update the [root_location](https://github.com/mihirp1998/Disentangling-3D-Prototypical-Nets/blob/f92a9a14ba7e414735facdac85e8d0c4bffd1ae2/exp_clevr_sta.py#L499) variable with the parent directory of the downloaded dataset: 
 
 
 ### Training
