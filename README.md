@@ -12,6 +12,13 @@
 conda env create -f environment.yml
 ```
 
+### Dataset
+
+Download part of the dataset from this link https://drive.google.com/file/d/1OXGvOgweSXjJMykRNlglvds-sDfwt0Sa/view?usp=sharing
+
+Update the root location from here: 
+
+
 ### Training
 
 ```
