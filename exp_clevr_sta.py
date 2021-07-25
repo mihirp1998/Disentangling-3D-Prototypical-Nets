@@ -495,3 +495,8 @@ elif 'Alien' in hostname:
     dataset_list_dir = dataset_list_dir.replace("CHANGE_ME",root_location)
     dataset_location = dataset_location.replace("CHANGE_ME",root_location)
     root_dataset = root_dataset.replace("CHANGE_ME",root_location)
+else:
+    root_location = "/media/mihir/dataset/d3dp_dataset"
+    dataset_list_dir = dataset_list_dir.replace("CHANGE_ME",root_location)
+    dataset_location = dataset_location.replace("CHANGE_ME",root_location)
+    root_dataset = root_dataset.replace("CHANGE_ME",root_location)
