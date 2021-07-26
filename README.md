@@ -1,4 +1,5 @@
-## (On Going) Disentangling 3D Prototypical Networks For Few-Shot Concept Learning
+##  Disentangling 3D Prototypical Networks For Few-Shot Concept Learning
+Code Release- Ongoing
 #### ICLR Paper: https://arxiv.org/abs/2011.03367
 #### Project Page: https://mihirp1998.github.io/project_pages/d3dp/
 
